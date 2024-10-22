@@ -1,0 +1,595 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title> AI CODING HUB </title>
+    <link rel="stylesheet"href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+   <!-- Icon Font Stylesheet -->
+   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+   <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+   
+    <!-- Libraries Stylesheet -->
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="lib/animate/animate.min.css" rel="stylesheet">
+     <!-- Google Web Fonts -->
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+     
+ 
+  <!-- Favicon -->
+  <link href="img/favicon.ico" rel="icon">
+ <!-- Navbar Start -->
+  
+ 
+     <style>
+         .navbar {
+             transition: all 0.3s
+          
+         }
+         .navbar-brand h1 {
+             font-size: 1.85rem;
+             font-weight: bold;
+         }
+         .nav-item {
+             position: relative;
+         }
+         .nav-item::after {
+             content: '';
+             position: absolute;
+             left: 0;
+             bottom: -5px;
+             width: 100%;
+             height: 2px;
+             background-color: transparent;
+             transition: background-color 0.3s;
+         }
+         .nav-item:hover::after {
+             background-color: #007bff; /* Primary color */
+         }
+         .nav-contact {
+             border-radius: 50px;
+             transition: background-color 0.3s;
+         }
+         .nav-contact:hover {
+             background-color: #0056b3; /* Darker shade for hover effect */
+         }
+     </style>
+     
+ </head>
+ <body>
+  <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+     <nav class="navbar navbar-expand-lg bg-white navbar-light shadow-sm py-3 py-lg-0 px-3 px-lg-0">
+         <a href="#" class="navbar-brand ms-lg-5">
+          <h1 class="display-1 m-0 text-primary" style="font-family: 'Montserrat', sans-serif; font-weight: 900; letter-spacing: 2px; text-transform: uppercase; color: #007bff; background-image: linear-gradient(to right, #007bff, #00c0ef); -webkit-background-clip: text; -webkit-text-fill-color: transparent;">
+            <strong> AI <span class="text-secondary">CODING HUB</span></strong>
+          </h1>
+         </a>
+         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+             <span class="navbar-toggler-icon"></span>
+         </button>
+         <div class="collapse navbar-collapse" id="navbarCollapse">
+             <div class="navbar-nav ms-auto py-0">
+                 <a href="contact.html" class="nav-item nav-link">Call / Whatsapp </a>
+                 <a href="tel:(+254)707697296" class="nav-item nav-link nav-contact bg-secondary text-white px-5 ms-lg-5">
+                     <i class="bi bi-telephone-outbound me-2"></i>(+254)707697296
+                 </a>
+             </div>
+         </div>
+     </nav>
+     <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+ </body>
+ </html>
+   <div class="container">
+          <div class="text-container" style="color: whitesmoke;font-size: larg;" class="mt-12">
+      AI Coding Hub is a premier institution dedicated to nurturing the next generation of AI and coding experts. We offer rigorous academic programs, hands-on projects, and industry collaborations to equip students with the skills and knowledge needed to thrive in the rapidly evolving tech landscape.
+    </div>
+  
+  </div>
+<!-- Navbar End -->
+<style>
+    .welcome {
+      position: relative;  /*Enable relative positioning for layering */
+      width: auto;  /* Adjust width as needed */
+      margin:  auto;  /* Center the element horizontally */
+      padding: 1px;  /* Add some padding */
+      object-fit: cover;
+      background-color: #f0f2f5;  /* Light gray background */
+      border-radius: 5px;  /* Rounded corners */
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);  /* Subtle shadow */
+     /* background-image: url("https://i.pinimg.com/564x/c5/d8/d4/c5d8d408507388fd1d87a98359461793.jpg"); 
+      background-size: cover; /* Stretch image to cover background */
+      background-position: center; /* Center image position */
+    }
+    .welcome-text {
+      object-fit: cover;
+      font-size: 1.45rem; /* Adjust font size as needed */
+      color: blue; /* Dark text */
+      
+     
+      /* Optional gradient text animation (requires external library) */
+      animation: glowing 0.5s ease-in-out infinite alternate;
+      -webkit-animation: glowing 0.5s ease-in-out infinite alternate;
+    }
+    
+    @keyframes glowing {
+      0% {
+        text-shadow: 0 0 0 #322e70;
+      }
+      50% {
+        text-shadow: 0 0 10px orange; /* Orange glow color */
+      }
+      100% {
+        text-shadow: 0 0 0 #f8efef;
+      }
+    }
+  </style>
+   <div class="hero">
+   <div class="hero-content">
+    <div class="welcome">
+      <h1 class="welcome-text"> Hello There! <span> 
+      </span> What Are You Building Today?</h1>
+<style>
+      .welcome-text {
+        overflow: hidden;
+        white-space: nowrap; /* Prevent line breaks */
+      animation: marquee 10s linear infinite;   /* Animation name, duration, timing, repetition */
+      }
+      
+      @keyframes marquee {
+        0% { transform: translateX(100%); } /* Start from right side */
+        100% { transform: translateX(-100%); } /* Move to left side */
+      }
+      
+</style>     
+
+  </div>
+          <div class="footer-logo">
+          <!--  <img src="https://i.pinimg.com/564x/d6/e7/34/d6e73462ddd1fc4e919ec81134ed344d.jpg" alt="School Logo"> -->
+  </div>
+    
+<style>
+  .styled-heading {
+  border: 5px solid lightgreen;
+  width: 100%; /* Maintain full width */
+  border-radius: 10px; 
+  display: grid;
+  grid-template-columns: repeat(2, 2fr); /* Two columns */
+  gap:0.25px; /* Spacing between words */
+  /* Text alignment changes for right alignment */
+  text-align: center; 
+  /*font-size: 1.550rem;  Adjust font size as needed */
+  color: whitesmoke;  /* White text color */
+  background-image: url("https://i.pinimg.com/736x/1e/8d/1c/1e8d1cde5d1be69484d4fc06f4225562.jpg"); 
+  background-size: cover;  /* Stretch image to cover background */
+  background-position: center; /* Center image position */
+  padding: 0.75rem;  /* Add some padding */
+}
+
+.styled-heading span:nth-child(1) { /* Style the first word */
+ 
+  /*padding: 0.25rem;  Adjust padding */
+  border-radius: 5px; /* Rounded corners */
+}
+.experience-box {
+  overflow: auto;
+  height: auto;
+  background-image: url("https://i.pinimg.com/564x/f9/29/e5/f929e52a626b3b90719ba33e7d513e93.jpg"); /* Replace with your image path */
+  background-size: cover; /* Adjust background size as needed */
+  background-repeat: no-repeat; /* Prevent image repetition */
+  background-position: center; /* Center the image horizontally and vertically */
+  position: relative; /* Required for some effects */
+  border-radius: 2px; /* Rounded corners */
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+  transition: all 0.3s ease-in-out; /* Smooth transition on hover */
+}
+.experience-box:hover {
+  transform: scale(1.05); /* Slight zoom on hover */
+  box-shadow: 0 10px 20px rgba(22, 211, 164, 0.4); /* Emphasized shadow on hover */
+}
+
+.experience-box h3 {
+  text-align: center; /* Maintain centered text */
+  text-shadow: 1px 1px 2px whitesmoke; /* Subtle text shadow for readability */
+  font-size: 3rem; /* Adjust font size as desired */
+}
+
+.fa-star {
+  animation: shine 1s infinite alternate; /* Animate the star icon (optional) */
+}
+
+@keyframes shine {
+  from {
+    opacity: 10;
+  }
+  to {
+    opacity: 0.8;
+  }
+}
+
+.container {
+  display: flex; /* Creates a flex container */
+  justify-content: left;  /*Aligns content to the left */
+  width: 100%; /* Makes the container responsive */
+}
+.text-container {
+  /* ... other styles ... */
+  text-align: flex;
+  line-height:2rem;
+  /*color: green;    Change text color for contrast */
+  padding: 2rem;
+  border-radius:10px;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+  background-image: url("https://i.pinimg.com/736x/1e/8d/1c/1e8d1cde5d1be69484d4fc06f4225562.jpg");
+  background-size: cover; /* Adjust as needed */
+  background-position: center; /* Adjust as needed */
+  background-repeat: no-repeat;
+}
+</style>    
+  </div>
+</div>   
+<!-- About Start -->
+<div class="container-fluid py-5 wow fadeInUp" data-wow-delay="0.1s">
+  <div class="container">
+     
+          </div>
+          <div class="col-lg-12">
+              <div class="mb-12">
+                  <h1 class="text-primary text-low" style="letter-spacing:1px;">Transform into a Tech Titan</h1>
+                  <h8 class="display-6 mb-0">Discover who we are!</h8>
+              </div>
+              <h3 class="text-body mb-4">{Your Partner, In Progress} </h3>
+              <p class="mb-6">AI Coding Hub: Your Launchpad to Tech Success. Explore our dynamic range of courses in Data Science, AI, and more. Learn from experts, build real-world projects, and kickstart your career in the tech industry</p>
+              <div class="row g-3">
+                  <div class="col-sm-6 wow zoomIn" data-wow-delay="0.6s">
+                      <div class="bg-primary d-flex flex-column justify-content-center text-center border-bottom border-5 border-secondary rounded p-3" style="height: 200px;">
+                          <i class="fa fa-star fa-4x text-white mb-4"></i>
+                          <h4 class="text-white mb-0">15 Years Experience</h4>
+                      </div>
+                  </div>
+                  <div class="col-sm-6 wow zoomIn" data-wow-delay="0.9s">
+                      <div class="bg-secondary d-flex flex-column justify-content-center text-center border-bottom border-5 border-primary rounded p-3" style="height: 200px;">
+                          <i class="fa fa-award fa-4x text-white mb-4"></i>
+                          <h4 class="text-white mb-0">Award Winning</h4>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+</div>
+<!-- About End -->
+
+<!-- start of team-->
+<div class="container-fluid py-6 wow fadeInUp" data-wow-delay="0.1s">
+  <div class="container">
+    <h5 class="text-primary text-uppercase text-align:center" style="letter-spacing: 10px;"> Our Team Members</h5>
+      <div class="text-center mx-auto mb-5" style="max-width: 100px;">
+         
+          <!-- <h1 class="display-8 mb-0">Our Professional Team Members</h1> -->
+      </div>
+      <div class="row g-5">
+          <div class="col-lg-4 wow slideInUp" data-wow-delay="0.3s">
+              <div class="position-relative rounded-top">
+                  <img class="img-fluid rounded-top w-10" src="https://i.pinimg.com/236x/b9/e0/e3/b9e0e30ac1ec95077b7e1d0abd250e5d.jpg" alt="">
+                  <div class="position-absolute bottom-0 end-0 d-flex flex-column bg-white p-1" style="margin-right: -25px;">
+                      <a class="btn btn-outline-secondary btn-square m-1" href="#"><i class="fab fa-twitter fw-normal"></i></a>
+                      <a class="btn btn-outline-secondary btn-square m-1" href="#"><i class="fab fa-facebook-f fw-normal"></i></a>
+                      <a class="btn btn-outline-secondary btn-square m-1" href="#"><i class="fab fa-linkedin-in fw-normal"></i></a>
+                      <a class="btn btn-outline-secondary btn-square m-1" href="#"><i class="fab fa-instagram fw-normal"></i></a>
+                  </div>
+              </div>
+              <div class="bg-primary text-center rounded-bottom p-4">
+                  <h3 class="text-white">JOHN STON</h3>
+                  <p class="text-white m-0">EXECUTIVE MEMBER</p>
+              </div>
+          </div>
+          <div class="col-lg-4 wow slideInUp" data-wow-delay="0.6s">
+              <div class="position-relative rounded-top">
+                  <img class="img-fluid rounded-top w-10" src="https://i.pinimg.com/236x/b9/e0/e3/b9e0e30ac1ec95077b7e1d0abd250e5d.jpg" alt="">
+                  <div class="position-absolute bottom-0 end-0 d-flex flex-column bg-white p-1" style="margin-right: -25px;">
+                      <a class="btn btn-outline-secondary btn-square m-1" href="#"><i class="fab fa-twitter fw-normal"></i></a>
+                      <a class="btn btn-outline-secondary btn-square m-1" href="#"><i class="fab fa-facebook-f fw-normal"></i></a>
+                      <a class="btn btn-outline-secondary btn-square m-1" href="#"><i class="fab fa-linkedin-in fw-normal"></i></a>
+                      <a class="btn btn-outline-secondary btn-square m-1" href="#"><i class="fab fa-instagram fw-normal"></i></a>
+                  </div>
+              </div>
+              <div class="bg-primary text-center rounded-bottom p-4">
+                  <h3 class="text-white">MIKE PERRO</h3>
+                  <p class="text-white m-0">EXECUTIVE MEMBER </p>
+              </div>
+          </div>
+          <div class="col-lg-4 wow slideInUp" data-wow-delay="0.6s">
+            <div class="position-relative rounded-top">
+                <img class="img-fluid rounded-top w-10" src="https://i.pinimg.com/236x/b9/e0/e3/b9e0e30ac1ec95077b7e1d0abd250e5d.jpg" alt="">
+                <div class="position-absolute bottom-0 end-0 d-flex flex-column bg-white p-1" style="margin-right: -25px;">
+                    <a class="btn btn-outline-secondary btn-square m-1" href="#"><i class="fab fa-twitter fw-normal"></i></a>
+                    <a class="btn btn-outline-secondary btn-square m-1" href="#"><i class="fab fa-facebook-f fw-normal"></i></a>
+                    <a class="btn btn-outline-secondary btn-square m-1" href="#"><i class="fab fa-linkedin-in fw-normal"></i></a>
+                    <a class="btn btn-outline-secondary btn-square m-1" href="#"><i class="fab fa-instagram fw-normal"></i></a>
+                </div>
+            </div>
+            <div class="bg-primary text-center rounded-bottom p-4">
+                <h3 class="text-white">MIKEL PATEL</h3>
+                <p class="text-white m-0">EXECUTIVE MEMBER </p>
+            </div>
+        </div>
+          </div>
+      </div>
+  </div>
+</div>
+<!-- End of team-->
+<h2 class="styled-heading">
+  <span> <h8>Unleash Your Potential!</h8> </span> 
+  <span> <h8>Discover Our Course Catalog </h8> </span>
+</h2>
+           </style>
+    <style>.course-title {
+              border-radius: 10px; /* Rounded corners */
+              font-size: 75px; /* Adjust font size as needed */
+              text-align:center;
+              padding: 0.35rem; /* Add some padding for spacing */
+              background-color: whitesmoke; /* Light gray background (optional) */
+              border: 0.5 px solid #024b26; /* Subtle border (optional) */
+             /*  margin-bottom: 2rem; Add some margin below the title */
+             /* margin-top: 2rem;  Add some margin below the title */
+              background-repeat: no-repeat;
+              background-size: cover;
+              background-image: url("https://i.pinimg.com/564x/06/2f/b8/062fb8d1755ba77525bd2cad9fc61f82.jpg");
+            }
+              .hero {
+                display: flex; /* Arrange content side-by-side */
+                align-items: center; /* Vertically center content */
+               /* height: 500px;  Set a height for the hero section (optional) */
+                /* background-color: #eef5f8;  Add a light background color (optional) */
+              }
+              .hero-content {
+                flex: 1; /* Allow content to fill available space */
+                text-align: center; /*  Center the heading text */
+                /*color: rgb(235, 229, 229);  Set the text color to green */
+              }
+                .hero-image {
+                     position: relative; /* Enable relative positioning for child element */
+                       /* Image width set to 100% of container */
+                     height: auto;   /* Maintain image aspect ratio */
+                    /*position: absolute;  /* Position image absolutely within container */
+                    top: 0; right: 0;  /* Position image at top and left of container */
+                    width: 100%;
+                          /* Add some margin from the right edge */
+                            /* border: 2px solid red;Add a subtle border */
+                            /* Add a slight rounded corner effect */
+                            border-radius: 10px;
+                            @keyframes colorChange {
+                            0% { background-color: green; }
+                            50% { background-color: blue; }
+                            100% { background-color: red; }
+                          }
+
+                          .element-to-animate {
+                            animation: colorChange 5s infinite alternate; /* Change '5s' to adjust the duration */
+                          }
+
+             }
+          </style>
+<style>
+    .my-div {
+        color:white; /* Change text color to white for better visibility on red background */
+        border: 1px solid #ddd;
+        border-radius: 2.5px; /* Rounded corners */
+        padding: 2rem; /* Adjust the value as needed */
+        background-image: url("https://i.pinimg.com/564x/99/b4/2e/99b42e1a16c09f244c5c18a9eec43dd7.jpg");
+        background-position: center; /* Adjust as needed */
+        background-repeat: repeat;
+        height: auto; /* Set a height for the div */
+        display: grid; /* Enable grid layout for the container */
+        grid-template-columns: 1fr 1fr;  /* Define two columns of equal width */
+        grid-gap: 0.5rem;  
+        text-transform: uppercase;
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        
+
+        }
+        .course-item {
+                    padding: 1.25rem;   /* Add some padding for spacing */
+                    border-bottom: 1.05 px solid #0fbd43dc; /* Add a subtle border to separate list items */
+                    /*list-style: bullets;  Remove default bullet points */
+                  }
+                  .course-item a {
+                    /* Style the link text */
+                    text-decoration: none;  /*Remove underline from link */
+                    color:whitesmoke; /* Set link text color */
+                    /*font-weight: bold;  Make link text bold */
+                    transition: color 0.3s ease-in-out; /* Add a smooth color transition on hover */
+                  }
+                  .course-item a:hover {
+                    /* Style changes on hover */
+                    color:yellowgreen; /* Change link color on hover */           
+}
+.explore {
+  display: inline-block;
+  width: 100px; /* Adjust width for desired pixel size */
+   /*height: 200px; Adjust height for desired pixel size */
+  background-size: cover; /* Adjust as needed */
+  position: relative; /* Needed for potential 3D effect  */
+  background-color:whitesmoke;
+  background-image: url("https://i.pinimg.com/736x/1e/8d/1c/1e8d1cde5d1be69484d4fc06f4225562.jpg");
+  padding: 0.25rem;   /*Add some padding for better separation between text and border */
+  font-size: 6.9rem;
+  color:whitesmoke;
+  transform: rotate(-1.5 deg);
+}
+.arrow {
+    font-size: 1.50rem;
+    color: white;
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    transition: color 0.1s;
+    text-align: justify;
+}
+.arrow i {
+    margin: 0.75rem;
+}
+
+.arrow:hover {
+    color:yellowgreen;
+}
+</style>
+<div class="my-div">
+  <div class="course-title">
+    <strong><span class="explore">e</span></strong>
+    <span class="xplore">x</span>
+    <span class="plore">p</span>
+    <span class="lore">l</span>
+    <span class="ore">o</span>
+    <span class="re">r</span>
+    <span class="e">e</span>
+    <span class="space"> </span>
+    <span class="arrow"> <h10> Course Catalog</h10><i class="fas fa-arrow-right"></i></span>
+  </div>
+  <ul>
+    {% for x in ac %}
+      <li class="course-item">
+        <a href="/{{ x.id }}/">{{ x.coursename }}</a>
+      </li>
+    {% endfor %}
+  </ul>
+</div>
+
+</style>
+<!-- Testimonial End -->
+
+<!--footer start-->
+<footer class="footer">
+  <div class="footer-content">
+    
+  <div class="footer-info">
+      <h2>Our Vision</h2>
+      <p>Turn Ideas Into Reality Via Technology</p>
+  
+      <h2>Our Mission</h2>
+      <p>Leverage Technology To Solve Real-World Problems</p>
+  </div>
+    <div class="footer-contact">
+      <p style="color: #f5f5f5;  padding:10px;">  Get In Touch</p>  
+      <ul>
+        <li class="fas fa-phone-alt">  (+254) 707-697-296 </li> 
+        <li class="fas fa-envelope">  info@sobracodinghub.com</li> <br>
+        <li class="fas fa-map-marker-alt">  P.o box 0 0100  Nairobi Gpo, KENYA.</li>
+      </ul>
+
+      <div class="social-media-list">
+
+          <span style="text-decoration:none; border-bottom: 2px solid rgba(11, 12, 107, 0.2);"><p> Connect With Us Online </p></span>
+          <div class="d-flex">
+            <a class="btn btn-lg btn-primary btn-lg-square rounded me-2" href="https://twitter.com/home" target="_blank"><i class="fab fa-twitter fw-normal"></i></a>
+            <a class="btn btn-lg btn-primary btn-lg-square rounded me-2" href="#"><i class="fab fa-facebook-f fw-normal" target="_blank"></i></a>
+            <a class="btn btn-lg btn-primary btn-lg-square rounded me-2" href="https://www.linkedin.com/feed/?legoTrackingToken=30NfmlWqldVomNMsSBA9z0Kc3RBsCZzkTsCfn9xk6NBkDsCfmhLjmNBkDsCejAVejAZp6lQsSlRsmlirnlK9AVfilh9kQZgfnB2sClAsAZQpmtAqnsCt6VBt6VFnT9BqSlBsRZyrSFvcDpAon1EoSVRomMZp4BQpmtAqnsCc3RKrSBQqndLk7hBpShFtOoMbz0Zpn9LoRdOpOoZsC5gr6lisCsCfmhLjmNBkD9D9z0ZrCZFt6BPrR1MtmZOpOoVejAVejRApnhPpnlNpl9JtkVMtmZOpOpQr7lxpClAfmh9s7lLsCsCjAZ9l4BjjR0Zuk9OpmhOrOpQr7lxpClAfmh9t6VBrmtBsOpQrClQrCAZp4BQrSNP9DhItm5CpmgZp4BQtmZVomMCcDpAon1EoSVRomMZpmRxjClDon0Cq7hTrT9Dfmh9s71x9zwNdz0PcjRAimVLqndOpnoCc3kMdPwVczsSfmh9tioUem5Ad3xxdPwVoP8Jdz8UoiRCdjkQbjgUcCkJd3AToS4Pd64Zp4BQu6lQrCZz"target="_blank"><i class="fab fa-linkedin-in fw-normal"></i></a>
+            <a class="btn btn-lg btn-primary btn-lg-square rounded me-2" href="https://www.instagram.com/sobra_dave/" target="_blank"><i class="fab fa-instagram fw-normal"></i></a>
+            <a href="#" class="btn btn-lg btn-secondary btn-lg-circle  rounded back-to-top"><i class="bi bi-arrow-up"></i></a>
+        </div>
+        
+  </div>
+  <div class="footer-copyright">
+    <p>&copy; <script>document.write(new Date().getFullYear())</script> AICodingHub. All Rights Reserved.</p>
+  </div>
+  
+</footer>
+<!--footer end-->
+<style>
+  .social-media-list {
+  background-repeat: no-repeat; /* Prevent image repetition */
+  background-position: center; /* Center the image horizontally and vertically */
+  padding: 0.85rem;
+  color:#f5f5f5; /* Set text color to white for better contrast on a dark image */
+  
+}
+  .footer {
+ /* background-color: #d3481e;  Light gray background */
+  /*padding: 1rem 0;  Add padding for spacing */
+  /*background-image: url("https://i.pinimg.com/564x/f9/29/e5/f929e52a626b3b90719ba33e7d513e93.jpg");*/
+  background-size: cover; /* Adjust as needed */
+  background-position: center; /* Adjust as needed */
+  background-repeat: no-repeat;
+}
+
+.footer-content {
+  /*  justify-content: flex-end;Spread content evenly */
+ /* align-items: center;  Vertically center content */
+  flex-wrap: wrap; /* Allow content to wrap on smaller screens */
+  
+
+  /* margin-bottom: 2rem;  Add some space between paragraphs */
+}
+
+.footer-info {
+    background-color:#f5f5f5;
+    background-image: url("https://i.pinimg.com/564x/8f/d0/79/8fd07977aabedb96565cb69daa3d7e84.jpg"); 
+    background-repeat: repeat;
+    
+}
+.footer-info h2 {
+    font-weight: bold;
+    margin-bottom: 1px;
+    text-align: center;
+}
+.footer-info p {
+    font-size: 16px;
+    color:black;
+    text-align: center;
+}
+.footer-social li {
+display: flex; /*   Display social icons inline */
+ /*margin-right: 1rem; Add spacing between icons */
+flex-wrap: wrap;
+justify-content: center;
+}
+.footer-contact{
+ /* margin-left: 45.5px; Add some margin */
+  display:block;
+  background-image: url("https://i.pinimg.com/736x/26/62/39/2662399cf90b31991799185e959daa40.jpg");
+  background-size: cover; /* Adjust as needed */
+  background-position: center; /* Adjust as needed */
+  background-repeat: no-repeat;
+ /* border-radius: 10px;  Rounded corners */
+}
+
+.footer-contact li {
+  margin-bottom: 0.2rem; /* Add spacing between contact info */
+  color:whitesmoke;
+  padding: 0.25rem;
+}
+.footer-contact i {
+  margin-right: 1rem; /* Add spacing between icon and text */
+}
+
+.footer-copyright {
+  text-align: center; /* Center copyright text */
+  padding:  1rem; /* Add padding for spacing */
+  background-color:#10ecc8;  /* Light gray background for copyright */
+  background-image: url("https://i.pinimg.com/564x/8f/d0/79/8fd07977aabedb96565cb69daa3d7e84.jpg");
+  background-size: cover; /* Adjust as needed */
+  background-position: center; /* Adjust as needed */
+  background-repeat: no-repeat;
+  color:#f8efef;
+}
+</style>
+ <!-- JavaScript Libraries -->
+ <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+ <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+ <script src="lib/wow/wow.min.js"></script>
+ <script src="lib/easing/easing.min.js"></script>
+ <script src="lib/waypoints/waypoints.min.js"></script>
+ <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+
+ <!-- Template Javascript -->
+ <script src="js/main.js"></script>
+
+  </body>
+</html>
+

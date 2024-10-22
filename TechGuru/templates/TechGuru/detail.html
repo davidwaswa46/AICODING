@@ -1,0 +1,580 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>SOBRA CODING HUB</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+    <link href="lib/flaticon/font/flaticon.css" rel="stylesheet">
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    
+    <style>
+        body {
+            background-color: background-color rgba(199, 247, 25, 0.467); /* Replace with your preferred color code */
+            margin: 0px; /* Optionally, remove default body margin */
+            font-family: Arial, sans-serif; /* Set a default font family */
+            background-image: url("https://i.pinimg.com/564x/ec/d9/88/ecd9880e28352378a9749b7a8c338ec0.jpg"); 
+            background-size: cover; /* Stretch image to cover background */
+        }
+    </style>
+    
+</head>
+<div class="container"></div>
+  <div class="text-container">
+<p style="color: black;" class="mt-6">
+<h5 class="text-primary text-uppercase" style="letter-spacing: 1px;">COURSE DESCRIPTION</h5>
+"AI is rapidly integrating into various aspects of our lives,
+raising ethical concerns and driving advancements in machine learning. Generative AI is capable of creating highly creative content, while AI has the potential to address global challenges. However, careful consideration of ethical and social implications is crucial for realizing these benefits".
+</div>
+{% if course.pk is 1 %}
+<div class="pht">
+    <img src="https://i.pinimg.com/564x/a3/c4/94/a3c494dd02285b65db8a538926967074.jpg">
+    
+        <style>
+            .pht {
+                text-align: center;
+                padding: 20px; /* Optional: Add padding for some space around the image */
+            }
+            .pht img {
+                max-width: 100%; /* Make sure the image doesn't exceed the container width */
+                height:auto; /* Maintain the aspect ratio of the image */
+                border-radius: 10px; /* Optional: Add a border radius for rounded corners */
+                box-shadow: 0 0 10px rgba(91, 134, 42, 0.2); /* Optional: Add a subtle box shadow */
+                background-color: #036d38;
+                background-size: cover; /* Stretch image to cover background */
+            }
+        </style>
+
+<style>
+  .container {
+  display: flex; /* Creates a flex container */
+  justify-content: left; /* Aligns content to the left */
+  width: 100%; /* Makes the container responsive */
+}
+.text-container {
+  /* ... other styles ... */
+  text-align:center;
+  font-size: 15px;
+  line-height: 1.5;
+  color: white; /* Change text color for contrast */
+  padding: 1rem;
+  border-radius: 5px;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+  background-image: url("https://i.pinimg.com/564x/c5/d8/d4/c5d8d408507388fd1d87a98359461793.jpg");
+  background-size: cover; /* Adjust as needed */
+  background-position: center; /* Adjust as needed */
+  background-repeat: no-repeat;
+  margin-left: 1rem;
+}
+    .last {
+        text-align:justify;
+        padding: 30px;
+        background-color: #28e4b5;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        margin: 20px auto;
+        max-width: 700px;
+    }
+</style>
+<h1><a href="https://www.edureka.co/blog/python-tutorial/"> Click to Start Learning! </a></h1>
+<p>The Course Instructor is:</p>
+<style>
+    p {
+  text-align: center; /* Center align the text */
+  color: #fff; /* White text color */
+  font-weight: bold; /* Bold text */
+  font-size: 1.2rem; /* Adjust font size as needed */
+  background:linear-gradient(to right, #f00 0%, #007bff 50%, #f00 100%); /* Gradient background */
+  background-clip: text; /* Apply background only to text */
+  -webkit-text-fill-color: transparent; /* Transparent text for background to shine through */
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3); /* Subtle text shadow */
+  padding: 0px 0px; /* Add some padding */
+  border-radius: 5px; /* Rounded corners */
+}
+</style>
+<h2>{{course.insname}}</h2>
+<h3 style="color:#080606;text-align:center;">How Would You Like To Learn The Course?</h3>
+<ul>
+{% for x in Allcourses.set.all %}
+      <li>
+        {{ x.ct }}
+      </li>
+{% endfor %}
+  </ul>
+{% elif course.pk is 3 %}
+   <div class="ph">
+    <img src="https://i.pinimg.com/564x/69/20/b7/6920b7a1d49c34ccb3ed8e8c66fa89d5.jpg">
+
+        <style>
+            .ph {
+                text-align: center;
+                padding: 20px; /* Optional: Add padding for some space around the image */
+            }
+
+            .ph img {
+                max-width: 100%; /* Make sure the image doesn't exceed the container width */
+                height: auto; /* Maintain the aspect ratio of the image */
+                border-radius: 10px; /* Optional: Add a border radius for rounded corners */
+                box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Optional: Add a subtle box shadow */
+                background-color: #036d38;
+            }
+        </style>
+        <style>
+          .container {
+  display: flex; /* Creates a flex container */
+  justify-content: left; /* Aligns content to the left */
+  width: 100%; /* Makes the container responsive */
+
+}
+.text-container {
+  /* ... other styles ... */
+  text-align: center;
+  font-size: 15px;
+  line-height: 1.5;
+  color: white; /* Change text color for contrast */
+  padding: 4 rem;
+  border-radius: 5px;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+  background-image: url("https://i.pinimg.com/564x/c5/d8/d4/c5d8d408507388fd1d87a98359461793.jpg");
+  background-size: cover; /* Adjust as needed */
+  background-position: center; /* Adjust as needed */
+  background-repeat: no-repeat;
+  margin-left: 1rem;
+}
+            .last {
+                text-align:justify;
+                padding: 30px;
+                background-color: #28e4b5;
+                border-radius: 10px;
+                box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+                margin: 20px auto;
+                max-width: 600px;
+            }
+        
+            .last img {
+                max-width: 100%;
+                height: auto;
+                border-radius: 8px;
+                box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+                background-image: url("https://cdn.pixabay.com/photo/2017/10/31/19/05/web-design-2906159_960_720.jpg");
+            }
+        </style>
+<h1><a href="https://www.edureka.co/blog/python-tutorial/"> Click to Start Learning! </a></h1>
+<p>The Course Instructor is:</p>
+<style>
+    p {
+  text-align: center; /* Center align the text */
+  color: #fff; /* White text color */
+  font-weight: bold; /* Bold text */
+  font-size: 1.2rem; /* Adjust font size as needed */
+  background: linear-gradient(to right, #f00 0%, #007bff 50%, #f00 100%); /* Gradient background */
+  background-clip: text; /* Apply background only to text */
+  -webkit-text-fill-color: transparent; /* Transparent text for background to shine through */
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3); /* Subtle text shadow */
+  padding: 0px 0px; /* Add some padding */
+  border-radius: 5px; /* Rounded corners */
+}
+</style>
+<h2>{{course.insname}}</h2>
+<h3 style="color:#080606;text-align:center;">How Would You Like To Learn The Course?</h3>
+<ul>
+{% for x in Allcourses.set.all %}
+      <li>
+        {{ x.ct }}
+      </li>
+{% endfor %}
+  </ul>
+  
+{% elif course.pk is 6 %}
+  <div class="ph">  <img src="https://i.pinimg.com/564x/ea/fa/96/eafa9620ce06effc1c3628f9777d6955.jpg">
+  
+          <style>
+              .ph {
+                  text-align: center;
+                  padding: 20px; /* Optional: Add padding for some space around the image */
+              }
+  
+              .ph img {
+                  max-width: 100%; /* Make sure the image doesn't exceed the container width */
+                  height: auto; /* Maintain the aspect ratio of the image */
+                  border-radius: 10px; /* Optional: Add a border radius for rounded corners */
+                  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Optional: Add a subtle box shadow */
+                  background-color: #036d38;
+              }
+          </style>
+  
+  <h1><a href="https://www.edureka.co/blog/python-tutorial/">Click to Start Learning</a></h1>
+  <p>The Course Instructor Is:</p>
+  <style>
+      p {
+    text-align: center; /* Center align the text */
+    color: #fff; /* White text color */
+    font-weight: bold; /* Bold text */
+    font-size: 1.2rem; /* Adjust font size as needed */
+    background: linear-gradient(to right, #f00 0%, #007bff 50%, #f00 100%); /* Gradient background */
+    background-clip: text; /* Apply background only to text */
+    -webkit-text-fill-color: transparent; /* Transparent text for background to shine through */
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3); /* Subtle text shadow */
+    padding: 0px 0px; /* Add some padding */
+    border-radius: 5px; /* Rounded corners */
+  }
+  </style>
+  <h2>{{ course.insname }}</h2>
+  <h3 style="color: rgb(36, 3, 3); text-align: center;">Happy coding!</h3>
+  <style>
+    .container {
+  display: flex; /* Creates a flex container */
+  justify-content: left; /* Aligns content to the left */
+  width: 100%; /* Makes the container responsive */
+  
+
+}
+.text-container {
+  /* ... other styles ... */
+  text-align: center;
+  font-size: 15px;
+  line-height: 1.5;
+  color: white; /* Change text color for contrast */
+  padding: 4 rem;
+  border-radius: 5px;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+  background-image: url("https://i.pinimg.com/564x/c5/d8/d4/c5d8d408507388fd1d87a98359461793.jpg");
+  background-size: cover; /* Adjust as needed */
+  background-position: center; /* Adjust as needed */
+  background-repeat: no-repeat;
+  margin-left: 1rem;
+}
+    .last {
+        text-align:justify;
+        padding: 10px;
+        background-color: #28e4b5;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        margin: 20px auto;
+        max-width: 600px;
+    }
+    .last img {
+        max-width: 100%;
+        height: auto;
+        border-radius: 8px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        background-image: url("https://cdn.pixabay.com/photo/2017/10/31/19/05/web-design-2906159_960_720.jpg");
+    }
+</style>
+  <ul>
+      {% for x in Allcourses.set.all %}
+        <li>
+          {{ x.ct }}
+        </li>
+      {% endfor %}
+    </ul>
+  
+{% elif course.pk is 9 %}
+<div class="hop">
+    <img src="https://i.pinimg.com/564x/c5/3e/e0/c53ee081252602c320c5493822002708.jpg">
+
+        <style>
+            .hop {
+                text-align: center;
+                padding: 20px; /* Optional: Add padding for some space around the image */
+            }
+
+            .hop img {
+                max-width: 100%; /* Make sure the image doesn't exceed the container width */
+                height: auto; /* Maintain the aspect ratio of the image */
+                border-radius: 10px; /* Optional: Add a border radius for rounded corners */
+                box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Optional: Add a subtle box shadow */
+                background-color: #036d38;
+            }
+        </style>
+        
+<h1><a href="https://www.edureka.co/blog/python-tutorial/">Click to Start Learning</a></h1>
+<p>The Course Instructor Is:</p>
+<style>
+    p {
+  text-align: center; /* Center align the text */
+  color: #fff; /* White text color */
+  font-weight: bold; /* Bold text */
+  font-size: 1.2rem; /* Adjust font size as needed */
+  background: 
+    linear-gradient(to right, #f00 0%, #007bff 50%, #f00 100%); /* Gradient background */
+  background-clip: text; /* Apply background only to text */
+  -webkit-text-fill-color: transparent; /* Transparent text for background to shine through */
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3); /* Subtle text shadow */
+  padding: 0px 0px; /* Add some padding */
+  border-radius: 5px; /* Rounded corners */
+}
+</style>
+<h2>{{ course.insname }}</h2>
+<h3 style="color: rgb(36, 3, 3); text-align: center;">Happy coding!</h3>
+<style>
+  .container {
+  display: flex; /* Creates a flex container */
+  justify-content: left; /* Aligns content to the left */
+  width: 100%; /* Makes the container responsive */
+  
+
+}
+.text-container {
+  /* ... other styles ... */
+  text-align: center;
+  font-size: 15px;
+  line-height: 1.5;
+  color: white; /* Change text color for contrast */
+  padding: 4 rem;
+  border-radius: 5px;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+  background-image: url("https://i.pinimg.com/564x/c5/d8/d4/c5d8d408507388fd1d87a98359461793.jpg");
+  background-size: cover; /* Adjust as needed */
+  background-position: center; /* Adjust as needed */
+  background-repeat: no-repeat;
+  margin-left: 1rem;
+}
+    .last {
+        text-align:justify;
+        padding: 10px;
+        background-color: #28e4b5;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        margin: 20px auto;
+        max-width: 600px;
+    }
+
+    .last img {
+        max-width: 100%;
+        height: auto;
+        border-radius: 8px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        background-image: url("https://cdn.pixabay.com/photo/2017/10/31/19/05/web-design-2906159_960_720.jpg");
+    }
+</style>
+<ul>
+{% for x in Allcourses.set.all %}
+      <li>
+        {{ x.ct }}
+      </li>
+    {% endfor %}
+  </ul>
+  
+
+{% elif course.pk is 13 %}
+<div class="th">
+    <img src="https://i.pinimg.com/564x/5e/1d/e8/5e1de82524efa4fca768e56fcf2d0911.jpg">
+
+        <style>
+            .th {
+                text-align: center;
+                padding: 20px; /* Optional: Add padding for some space around the image */
+            }
+
+            .th img {
+                max-width: 100%; /* Make sure the image doesn't exceed the container width */
+                height: auto; /* Maintain the aspect ratio of the image */
+                border-radius: 10px; /* Optional: Add a border radius for rounded corners */
+                box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Optional: Add a subtle box shadow */
+                background-color: #036d38;
+            }
+        </style>
+        
+<h1><a href="https://www.edureka.co/blog/python-tutorial/">Click to Start Learning</a></h1>
+<p>The Course Instructor Is:</p>
+<style>
+    p {
+  text-align: center; /* Center align the text */
+  color: #fff; /* White text color */
+  font-weight: bold; /* Bold text */
+  font-size: 1.2rem; /* Adjust font size as needed */
+  background: 
+    linear-gradient(to right, #f00 0%, #007bff 50%, #f00 100%); /* Gradient background */
+  background-clip: text; /* Apply background only to text */
+  -webkit-text-fill-color: transparent; /* Transparent text for background to shine through */
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3); /* Subtle text shadow */
+  padding: 0px 0px; /* Add some padding */
+  border-radius: 5px; /* Rounded corners */
+}
+</style>
+<h2>{{ course.insname }}</h2>
+<h3 style="color: rgb(36, 3, 3); text-align: center;">Happy coding!</h3>
+
+
+<style>
+  .container {
+  display: flex; /* Creates a flex container */
+  justify-content: left; /* Aligns content to the left */
+  width: 100%; /* Makes the container responsive */
+
+}
+.text-container {
+  /* ... other styles ... */
+  text-align: center;
+  font-size: 15px;
+  line-height: 1.5;
+  color: white; /* Change text color for contrast */
+  padding: 4 rem;
+  border-radius: 5px;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+  background-image: url("https://i.pinimg.com/564x/c5/d8/d4/c5d8d408507388fd1d87a98359461793.jpg");
+  background-size: cover; /* Adjust as needed */
+  background-position: center; /* Adjust as needed */
+  background-repeat: no-repeat;
+  margin-left: 1rem;
+}
+    .last {
+        text-align:justify;
+        padding: 10px;
+        background-color: #28e4b5;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        margin: 20px auto;
+        max-width: 600px;
+    }
+    .last img {
+        max-width: 100%;
+        height: auto;
+        border-radius: 8px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        background-image: url("https://cdn.pixabay.com/photo/2017/10/31/19/05/web-design-2906159_960_720.jpg");
+    }
+</style>
+<ul>
+    {% for x in Allcourses.set.all %}
+      <li>
+        {{ x.ct }}
+      </li>
+    {% endfor %}
+  </ul>
+  
+
+{% elif course.pk is 14 %}
+<div class="op">
+    <img src="https://i.pinimg.com/564x/dc/00/70/dc0070bf7b5c69d252c664b49f4e0968.jpg">
+
+        <style>
+          .container {
+  display: flex; /* Creates a flex container */
+  justify-content: left; /* Aligns content to the left */
+  width: 100%; /* Makes the container responsive */
+
+}
+.text-container {
+  /* ... other styles ... */
+  text-align: center;
+  font-size: 15px;
+  line-height: 1.5;
+  color: white; /* Change text color for contrast */
+  padding: 4 rem;
+  border-radius: 5px;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+  background-image: url("https://i.pinimg.com/564x/c5/d8/d4/c5d8d408507388fd1d87a98359461793.jpg");
+  background-size: cover; /* Adjust as needed */
+  background-position: center; /* Adjust as needed */
+  background-repeat: no-repeat;
+  margin-left: 1rem;
+}
+            .op{
+                text-align: center;
+                padding: 20px; /* Optional: Add padding for some space around the image */
+            }
+
+            .op img {
+                max-width: 100%; /* Make sure the image doesn't exceed the container width */
+                height: auto; /* Maintain the aspect ratio of the image */
+                border-radius: 10px; /* Optional: Add a border radius for rounded corners */
+                box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Optional: Add a subtle box shadow */
+                background-color: #036d38;
+            } 
+            
+        </style>
+
+        
+<h1><a href="https://www.edureka.co/blog/python-tutorial/">Click to Start Learning</a></h1>
+<p>The Course Instructor Is:</p>
+<style>
+    p {
+  text-align: center; /* Center align the text */
+  color: #fff; /* White text color */
+  font-weight: bold; /* Bold text */
+  font-size: 1.2rem; /* Adjust font size as needed */
+  background: 
+    linear-gradient(to right, #f00 0%, #007bff 50%, #f00 100%); /* Gradient background */
+  background-clip: text; /* Apply background only to text */
+  -webkit-text-fill-color: transparent; /* Transparent text for background to shine through */
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3); /* Subtle text shadow */
+  padding: 0px 0px; /* Add some padding */
+  border-radius: 5px; /* Rounded corners */
+}
+</style>
+<h2>{{ course.insname }}</h2>
+<h3 style="color: rgb(36, 3, 3); text-align: center;">Happy coding!</h3>
+<style>
+  
+    .last {
+        text-align:justify;
+        padding: 10px;
+        background-color: #28e4b5;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        margin: 20px auto;
+        max-width: 600px;
+    }
+
+    .last img {
+        max-width: 100%;
+        height: auto;
+        border-radius: 8px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        background-image: url("https://cdn.pixabay.com/photo/2017/10/31/19/05/web-design-2906159_960_720.jpg");
+    }
+</style>
+<ul>
+{% for x in Allcourses.set.all %}
+        <li>
+            {{ x.ct }}
+        </li>
+{% endfor %}
+</ul>      
+{% else %}
+<h1>{{ course.coursename }}</h1>
+<h2>{{ course.insname }}</h2>
+{% endif %}
+{% if error_message %}
+<p><strong>{{ error_message }}</strong></p>
+{% endif %}
+</div>
+
+<style>
+            /* Style the toggle button group */
+            .btn-group-toggle {
+            display: flex; /* Arrange buttons horizontally */
+            justify-content: center; /* Center buttons within the group */
+            }
+
+            /* Style the toggle buttons (individual buttons) */
+            .btn-outline-primary.active {
+            background-color: #007bff; /* Change background color for selected button */
+            color: #fff; /* Change text color for selected button */
+            border-color: #007bff; /* Update border color for selected button */
+            }
+
+</style>
+
+<div class="last">
+    <form action="{% url 'TechGuru:yourchoice' course.id}" method="post">
+        {% csrf_token %}
+        <div class="btn-group btn-group-toggle" data-toggle="buttons">
+          {% for choice in course.details_set.all %}
+            <label class="btn btn-outline-primary">
+              <input type="radio" name="choice" id="choice{{ forloop.counter }}" value="{{ choice.id }}"> {{ choice.ct }}
+            </label>
+          {% endfor %}
+        </div>
+        <br>
+        <input type="submit" value="Submit" class="btn btn-primary">
+      </form> 
+    </div> 
+    
+
+</body>
+  </html>
