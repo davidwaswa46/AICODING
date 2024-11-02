@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>{{ title }}</title>
+    
+    <!-- CSS Libraries -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: rgba(199, 247, 25, 0.467) url("https://i.pinimg.com/564x/ec/d9/88/ecd9880e28352378a9749b7a8c338ec0.jpg") no-repeat center center fixed;
+            background-size: cover;
+        }
+        .container, .text-container {
+            text-align: center;
+            color: white;
+            padding: 1rem;
+        }
+        .text-container {
+            font-size: 15px;
+            line-height: 1.5;
+            box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+            color: #fff;
+        }
+        .btn-primary {
+            display: block;
+            width: 100%;
+            margin-top: 12px;
+        }
+    </style>
+</head>
+<body>
+    <header class="container">
+        <h1>{{ title }}</h1>
+    </header>
+    
+    {% block content %}{% endblock %}
+    
+    <footer class="container">
+        <p>&copy; 2024 Sobra Coding Hub</p>
+    </footer>
+</body>
+</html>
