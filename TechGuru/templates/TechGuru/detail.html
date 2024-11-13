@@ -116,9 +116,23 @@ raising ethical concerns and driving advancements in machine learning. Generativ
         {{ x.ct }}
       </li>
 {% endfor %}
-  </ul>
+</ul>
 {% elif course.pk is 3 %}
-   <div class="pht">
+<div class="pht">
+  <!-- Enrollment Form -->
+  <form class="enrollment-form" action="/enroll/" method="post">
+   {% csrf_token %}
+   <label for="name">Name:</label>
+   <input type="text" id="name" name="name" required>
+   
+   <label for="email">Email:</label>
+   <input type="email" id="email" name="email" required>
+   
+   <label for="course">Course:</label>
+   <input type="text" id="course" name="course" value="{{ course.name }}" required>
+   
+   <button type="submit" class="btn btn-primary mt-3">Enroll Now</button>
+</form>
     <img src="https://i.pinimg.com/564x/a3/c4/94/a3c494dd02285b65db8a538926967074.jpg">
     
         <style>
@@ -162,8 +176,6 @@ raising ethical concerns and driving advancements in machine learning. Generativ
         background-color: #28e4b5;
         border-radius: 10px;
         box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-       
-      
     }
         </style>
 <h1><a href="https://www.edureka.co/blog/python-tutorial/"> Click to Start Learning! </a></h1>
@@ -225,17 +237,19 @@ raising ethical concerns and driving advancements in machine learning. Generativ
     padding: 0px 0px; /* Add some padding */
    /* border-radius: 5px;  Rounded corners */
   }
-  </style>
-  <h2>{{ course.insname }}</h2>
-  <h3 style="color: rgb(36, 3, 3); text-align: center;">Happy coding!</h3>
-  <style>
-    .container {
-  display: flex; /* Creates a flex container */
-  justify-content: left; /* Aligns content to the left */
-  width: 100%; /* Makes the container responsive */
-  
+ </style>
+  <h2>{{course.insname}}</h2>
+  <h3 style="color:#080606;text-align:center;">How Would You Like To Learn The Course?</h3>
+  <ul>
+  {% for x in Allcourses.set.all %}
+        <li>
+          {{ x.ct }}
+        </li>
+  {% endfor %}
+    </ul> 
 
-}
+<style>
+
 .text-container {
   /* ... other styles ... */
   text-align: center;
@@ -267,14 +281,6 @@ raising ethical concerns and driving advancements in machine learning. Generativ
         background-image: url("https://cdn.pixabay.com/photo/2017/10/31/19/05/web-design-2906159_960_720.jpg");
     }
 </style>
-  <ul>
-      {% for x in Allcourses.set.all %}
-        <li>
-          {{ x.ct }}
-        </li>
-      {% endfor %}
-    </ul>
-  
 {% elif course.pk is 9 %}
 <div class="hop">
     <img src="https://i.pinimg.com/564x/c5/3e/e0/c53ee081252602c320c5493822002708.jpg">
