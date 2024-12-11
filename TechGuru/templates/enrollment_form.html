@@ -1,0 +1,18 @@
+{% if course.pk == 1 %}
+<div class="container image-container">
+    <form class="enrollment-form" action="/enroll/" method="post">
+        {% csrf_token %}
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+        
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+        
+        <label for="course">Course:</label>
+        <input type="text" id="course" name="course" value="{{ course.name }}" required>
+        
+        <button type="submit" class="btn btn-primary">Enroll Now</button>
+    </form>
+    <img src="{{ course.image_url }}" alt="Course Banner Image" style="max-width:100%; height:auto; border-radius:10px;">
+</div>
+{% endif %}

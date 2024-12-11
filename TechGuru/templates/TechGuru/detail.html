@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>SOBRA CODING HUB</title>
+    <title>AI CODING HUB</title>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
     <link href="lib/flaticon/font/flaticon.css" rel="stylesheet">
@@ -30,17 +30,115 @@ raising ethical concerns and driving advancements in machine learning. Generativ
 </div>
 {% if course.pk is 1 %}
 <div class="pht">
+   <!-- Enrollment Form -->
+   <form class="enrollment-form" action="/enroll/" method="post">
+    {% csrf_token %}
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="name" required>
+    
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" required>
+    
+    <button type="submit" class="btn btn-primary mt-3">Enroll Now</button>
+</form>
+    <img src="https://i.pinimg.com/564x/a3/c4/94/a3c494dd02285b65db8a538926967074.jpg">
+        <style>
+            .pht {
+                text-align: center;
+                padding: 2rem ; /* Optional: Add padding for some space around the image */
+            }
+            .pht img {
+                max-width: 100%; /* Make sure the image doesn't exceed the container width */
+                height:auto; /* Maintain the aspect ratio of the image */
+                /*border-radius: 10px;  Optional: Add a border radius for rounded corners */
+                box-shadow: 0 0 10px rgba(91, 134, 42, 0.2); /* Optional: Add a subtle box shadow */
+                background-color: #036d38;
+                background-size: cover; /* Stretch image to cover background */
+            }
+        </style>
+
+<style>
+  .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 100%;
+            color: white;
+        }
+.text-container {
+  /* ... other styles ... */
+  text-align:center;
+  font-size: 15px;
+  line-height: 1.5;
+  color: white; /* Change text color for contrast */
+  padding: 1rem;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+  background-image: url("https://i.pinimg.com/564x/c5/d8/d4/c5d8d408507388fd1d87a98359461793.jpg");
+  background-size: cover; /* Adjust as needed */
+  background-position: center; /* Adjust as needed */
+  background-repeat: no-repeat;
+
+}
+    .last {
+        text-align:justify;
+        padding: 2rem;
+        background-color: #28e4b5;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+       
+      
+    }
+</style>
+<h1><a href="https://www.edureka.co/blog/python-tutorial/"> Click to Start Learning! </a></h1>
+<p>The Course Instructor is:</p>
+<style>
+    p {
+  text-align: center; /* Center align the text */
+  color: #fff; /* White text color */
+  /* font-weight: bold;/*  Bold text */
+  /* font-size: 1.2rem; Adjust font size as needed */
+  background:linear-gradient(to right, #f00 0%, #007bff 50%, #f00 100%); /* Gradient background */
+  background-clip: text; /* Apply background only to text */
+  -webkit-text-fill-color: transparent; /* Transparent text for background to shine through */
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3); /* Subtle text shadow */
+  padding: 0px 0px; /* Add some padding */
+ /* border-radius: 5px;  Rounded corners */
+}
+</style>
+<h2>{{course.insname}}</h2>
+<h3 style="color:#080606;text-align:center;">How Would You Like To Learn The Course?</h3>
+<ul>
+{% for x in Allcourses.set.all %}
+      <li>
+        {{ x.ct }}
+      </li>
+{% endfor %}
+</ul>
+{% elif course.pk is 3 %}
+
+<div class="pht">
+  <!-- Enrollment Form -->
+  <form class="enrollment-form" action="/enroll/" method="post">
+   {% csrf_token %}
+   <label for="name">Name:</label>
+   <input type="text" id="name" name="name" required>
+   
+   <label for="email">Email:</label>
+   <input type="email" id="email" name="email" required>
+
+   <button type="submit" class="btn btn-primary mt-3">Enroll Now</button>
+</form>
     <img src="https://i.pinimg.com/564x/a3/c4/94/a3c494dd02285b65db8a538926967074.jpg">
     
         <style>
             .pht {
                 text-align: center;
-                padding: 20px; /* Optional: Add padding for some space around the image */
+                padding: 2rem ; /* Optional: Add padding for some space around the image */
             }
             .pht img {
-                max-width: 100%; /* Make sure the image doesn't exceed the container width */
+                width: 100%; /* Make sure the image doesn't exceed the container width */
                 height:auto; /* Maintain the aspect ratio of the image */
-                border-radius: 10px; /* Optional: Add a border radius for rounded corners */
+                /*border-radius: 10px;  Optional: Add a border radius for rounded corners */
                 box-shadow: 0 0 10px rgba(91, 134, 42, 0.2); /* Optional: Add a subtle box shadow */
                 background-color: #036d38;
                 background-size: cover; /* Stretch image to cover background */
@@ -60,106 +158,20 @@ raising ethical concerns and driving advancements in machine learning. Generativ
   line-height: 1.5;
   color: white; /* Change text color for contrast */
   padding: 1rem;
-  border-radius: 5px;
   box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
   background-image: url("https://i.pinimg.com/564x/c5/d8/d4/c5d8d408507388fd1d87a98359461793.jpg");
   background-size: cover; /* Adjust as needed */
   background-position: center; /* Adjust as needed */
   background-repeat: no-repeat;
-  margin-left: 1rem;
+
 }
     .last {
         text-align:justify;
-        padding: 30px;
+        padding: 2rem;
         background-color: #28e4b5;
         border-radius: 10px;
         box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-        margin: 20px auto;
-        max-width: 700px;
     }
-</style>
-<h1><a href="https://www.edureka.co/blog/python-tutorial/"> Click to Start Learning! </a></h1>
-<p>The Course Instructor is:</p>
-<style>
-    p {
-  text-align: center; /* Center align the text */
-  color: #fff; /* White text color */
-  font-weight: bold; /* Bold text */
-  font-size: 1.2rem; /* Adjust font size as needed */
-  background:linear-gradient(to right, #f00 0%, #007bff 50%, #f00 100%); /* Gradient background */
-  background-clip: text; /* Apply background only to text */
-  -webkit-text-fill-color: transparent; /* Transparent text for background to shine through */
-  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3); /* Subtle text shadow */
-  padding: 0px 0px; /* Add some padding */
-  border-radius: 5px; /* Rounded corners */
-}
-</style>
-<h2>{{course.insname}}</h2>
-<h3 style="color:#080606;text-align:center;">How Would You Like To Learn The Course?</h3>
-<ul>
-{% for x in Allcourses.set.all %}
-      <li>
-        {{ x.ct }}
-      </li>
-{% endfor %}
-  </ul>
-{% elif course.pk is 3 %}
-   <div class="ph">
-    <img src="https://i.pinimg.com/564x/69/20/b7/6920b7a1d49c34ccb3ed8e8c66fa89d5.jpg">
-
-        <style>
-            .ph {
-                text-align: center;
-                padding: 20px; /* Optional: Add padding for some space around the image */
-            }
-
-            .ph img {
-                max-width: 100%; /* Make sure the image doesn't exceed the container width */
-                height: auto; /* Maintain the aspect ratio of the image */
-                border-radius: 10px; /* Optional: Add a border radius for rounded corners */
-                box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Optional: Add a subtle box shadow */
-                background-color: #036d38;
-            }
-        </style>
-        <style>
-          .container {
-  display: flex; /* Creates a flex container */
-  justify-content: left; /* Aligns content to the left */
-  width: 100%; /* Makes the container responsive */
-
-}
-.text-container {
-  /* ... other styles ... */
-  text-align: center;
-  font-size: 15px;
-  line-height: 1.5;
-  color: white; /* Change text color for contrast */
-  padding: 4 rem;
-  border-radius: 5px;
-  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
-  background-image: url("https://i.pinimg.com/564x/c5/d8/d4/c5d8d408507388fd1d87a98359461793.jpg");
-  background-size: cover; /* Adjust as needed */
-  background-position: center; /* Adjust as needed */
-  background-repeat: no-repeat;
-  margin-left: 1rem;
-}
-            .last {
-                text-align:justify;
-                padding: 30px;
-                background-color: #28e4b5;
-                border-radius: 10px;
-                box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-                margin: 20px auto;
-                max-width: 600px;
-            }
-        
-            .last img {
-                max-width: 100%;
-                height: auto;
-                border-radius: 8px;
-                box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-                background-image: url("https://cdn.pixabay.com/photo/2017/10/31/19/05/web-design-2906159_960_720.jpg");
-            }
         </style>
 <h1><a href="https://www.edureka.co/blog/python-tutorial/"> Click to Start Learning! </a></h1>
 <p>The Course Instructor is:</p>
@@ -211,40 +223,41 @@ raising ethical concerns and driving advancements in machine learning. Generativ
       p {
     text-align: center; /* Center align the text */
     color: #fff; /* White text color */
-    font-weight: bold; /* Bold text */
-    font-size: 1.2rem; /* Adjust font size as needed */
+    /* font-weight: bold; Bold text */
+    /* font-size: 1.2rem; Adjust font size as needed */
     background: linear-gradient(to right, #f00 0%, #007bff 50%, #f00 100%); /* Gradient background */
     background-clip: text; /* Apply background only to text */
     -webkit-text-fill-color: transparent; /* Transparent text for background to shine through */
     text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3); /* Subtle text shadow */
     padding: 0px 0px; /* Add some padding */
-    border-radius: 5px; /* Rounded corners */
+   /* border-radius: 5px;  Rounded corners */
   }
-  </style>
-  <h2>{{ course.insname }}</h2>
-  <h3 style="color: rgb(36, 3, 3); text-align: center;">Happy coding!</h3>
-  <style>
-    .container {
-  display: flex; /* Creates a flex container */
-  justify-content: left; /* Aligns content to the left */
-  width: 100%; /* Makes the container responsive */
-  
+ </style>
+  <h2>{{course.insname}}</h2>
+  <h3 style="color:#080606;text-align:center;">How Would You Like To Learn The Course?</h3>
+  <ul>
+  {% for x in Allcourses.set.all %}
+        <li>
+          {{ x.ct }}
+        </li>
+  {% endfor %}
+    </ul> 
 
-}
+<style>
+
 .text-container {
   /* ... other styles ... */
   text-align: center;
   font-size: 15px;
   line-height: 1.5;
   color: white; /* Change text color for contrast */
-  padding: 4 rem;
-  border-radius: 5px;
+  padding: 2 rem;
   box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
   background-image: url("https://i.pinimg.com/564x/c5/d8/d4/c5d8d408507388fd1d87a98359461793.jpg");
   background-size: cover; /* Adjust as needed */
   background-position: center; /* Adjust as needed */
   background-repeat: no-repeat;
-  margin-left: 1rem;
+  
 }
     .last {
         text-align:justify;
@@ -252,8 +265,8 @@ raising ethical concerns and driving advancements in machine learning. Generativ
         background-color: #28e4b5;
         border-radius: 10px;
         box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-        margin: 20px auto;
-        max-width: 600px;
+        margin: 10px auto;
+     
     }
     .last img {
         max-width: 100%;
@@ -263,14 +276,6 @@ raising ethical concerns and driving advancements in machine learning. Generativ
         background-image: url("https://cdn.pixabay.com/photo/2017/10/31/19/05/web-design-2906159_960_720.jpg");
     }
 </style>
-  <ul>
-      {% for x in Allcourses.set.all %}
-        <li>
-          {{ x.ct }}
-        </li>
-      {% endfor %}
-    </ul>
-  
 {% elif course.pk is 9 %}
 <div class="hop">
     <img src="https://i.pinimg.com/564x/c5/3e/e0/c53ee081252602c320c5493822002708.jpg">
@@ -296,15 +301,15 @@ raising ethical concerns and driving advancements in machine learning. Generativ
     p {
   text-align: center; /* Center align the text */
   color: #fff; /* White text color */
-  font-weight: bold; /* Bold text */
-  font-size: 1.2rem; /* Adjust font size as needed */
+ /* font-weight: bold;  Bold text */
+  /* font-size: 1.2rem; Adjust font size as needed */
   background: 
     linear-gradient(to right, #f00 0%, #007bff 50%, #f00 100%); /* Gradient background */
   background-clip: text; /* Apply background only to text */
   -webkit-text-fill-color: transparent; /* Transparent text for background to shine through */
   text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3); /* Subtle text shadow */
   padding: 0px 0px; /* Add some padding */
-  border-radius: 5px; /* Rounded corners */
+ /* border-radius: 5px;  Rounded corners */
 }
 </style>
 <h2>{{ course.insname }}</h2>
@@ -320,17 +325,15 @@ raising ethical concerns and driving advancements in machine learning. Generativ
 .text-container {
   /* ... other styles ... */
   text-align: center;
-  font-size: 15px;
   line-height: 1.5;
   color: white; /* Change text color for contrast */
-  padding: 4 rem;
-  border-radius: 5px;
+  padding: 2 rem;
   box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
   background-image: url("https://i.pinimg.com/564x/c5/d8/d4/c5d8d408507388fd1d87a98359461793.jpg");
   background-size: cover; /* Adjust as needed */
   background-position: center; /* Adjust as needed */
   background-repeat: no-repeat;
-  margin-left: 1rem;
+  
 }
     .last {
         text-align:justify;
@@ -338,8 +341,8 @@ raising ethical concerns and driving advancements in machine learning. Generativ
         background-color: #28e4b5;
         border-radius: 10px;
         box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-        margin: 20px auto;
-        max-width: 600px;
+        margin: 10px auto;
+     
     }
 
     .last img {
@@ -528,7 +531,7 @@ raising ethical concerns and driving advancements in machine learning. Generativ
         background-image: url("https://cdn.pixabay.com/photo/2017/10/31/19/05/web-design-2906159_960_720.jpg");
     }
 </style>
-<ul>
+<ul> 
 {% for x in Allcourses.set.all %}
         <li>
             {{ x.ct }}

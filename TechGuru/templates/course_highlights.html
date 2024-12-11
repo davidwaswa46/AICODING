@@ -1,0 +1,11 @@
+<div class="container">
+    <h1><a href="{{ course.learn_link }}" target="_blank">Click to Start Learning!</a></h1>
+    <p class="highlight-text">The Course Instructor is: <strong>{{ course.insname }}</strong></p>
+    
+    <h3>How Would You Like To Learn The Course?</h3>
+    <ul>
+        {% for x in Allcourses.set.all %}
+            <li>{{ x.ct }}</li>
+        {% endfor %}
+    </ul>
+</div>
